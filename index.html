@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="style.css">
+    <title>電卓</title>
+  </head>
+  <body>
+      <h1>電卓</h1>
+    <input />
+    <div>
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button class="formula" onclick="append('/')">÷</button><br>
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button class="formula" onclick="append('*')">×</button><br>
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button class="formula" onclick="append('-')">-</button><br>
+      <button onclick="append('0')">0</button>
+      <button onclick="append('00')">00</button>
+      <button onclick="append('.')">.</button>
+      <button class="formula" onclick="append('+')">+</button><br>
+      <button class="long" onclick="update('')">C</button>
+      <button class="long" onclick="calc()">=</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

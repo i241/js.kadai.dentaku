@@ -7,27 +7,38 @@
     <title>電卓</title>
   </head>
   <body>
-      <h1>電卓</h1>
-    <input />
-    <div>
-      <button onclick="append('7')">7</button>
-      <button onclick="append('8')">8</button>
-      <button onclick="append('9')">9</button>
-      <button class="formula" onclick="append('/')">÷</button><br>
-      <button onclick="append('4')">4</button>
-      <button onclick="append('5')">5</button>
-      <button onclick="append('6')">6</button>
-      <button class="formula" onclick="append('*')">×</button><br>
-      <button onclick="append('1')">1</button>
-      <button onclick="append('2')">2</button>
-      <button onclick="append('3')">3</button>
-      <button class="formula" onclick="append('-')">-</button><br>
-      <button onclick="append('0')">0</button>
-      <button onclick="append('00')">00</button>
-      <button onclick="append('.')">.</button>
-      <button class="formula" onclick="append('+')">+</button><br>
-      <button class="long" onclick="update('')">C</button>
-      <button class="long" onclick="calc()">=</button>
+    <div class = "container">
+      <div id = "output_total" class="output">0</div>
+      <div id = "output_sub" class="output active">0</div>
+      <div class = 'input'>
+        <section class = 'row'>
+          <button id = "clear">C</button>
+        </section>
+        <section class = 'row'>
+          <button class = "num_bth one_nine" data-index-id = 9 >9</button>
+          <button class = "num_bth one_nine" data-index-id = 8 >8</button>
+          <button class = "num_bth one_nine" data-index-id = 7 >7</button>
+          <button class = "num_bth cal" data-index-id= '/'>÷</button>
+        </section>
+        <section class = 'row'>
+          <button class = "num_bth one_nine" data-index-id = 6 >6</button>
+          <button class = "num_bth one_nine" data-index-id = 5 >5</button>
+          <button class = "num_bth one_nine" data-index-id = 4 >4</button>
+          <button class = "num_bth cal" data-index-id = '*'>×</button>
+        </section>
+        <section class = 'row'>
+          <button class = "num_bth one_nine" data-index-id = 3 >3</button>
+          <button class = "num_bth one_nine" data-index-id = 2 >2</button>
+          <button class = "num_bth one_nine" data-index-id = 1 >1</button>
+          <button class = "num_bth cal" data-index-id = '-'>－</button>
+        </section>
+        <section class = 'row'>
+          <button id = "zero" class = "num_bth one_nine" data-index-id = 0 >0</button>
+          <button id = "point" class = "num_bth" data-index-id = . >.</button>
+          <button id = 'equal_btn'>=</button>            
+          <button class = "num_bth cal" data-index-id = '+'>+</button>
+        </section>        
+      </div>
     </div>
     <script src="index.js"></script>
   </body>

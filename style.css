@@ -1,23 +1,36 @@
-div {
-  margin-top: 20px;
-}
-
 button {
-  width: 40px;
-  height: 40px;
+  color: #FFFFFF;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
-  background-color: #777777;
+  background-color: #444444;
+}
+
+.num_bth {
+  font-size: 20px;
+}
+
+.cal {
+  background-color: #FF8C00;
+}
+
+
+.container {
+  height: auto;
+  width: 220px;
+  background-color:#222222;
+}
+
+.output.active {
+  display: block;
+}
+.output {
   color: #FFFFFF;
-  
-}
-
-.long {
-  width: 80px;
-}
-
-.formula {
-  background-color: #FF8C00	;
+  height: 50px;
+  font-size: 35px;
+  text-align: right;
+  display: none;
 }
 
 /*===============*/
